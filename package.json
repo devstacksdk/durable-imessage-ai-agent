@@ -1,0 +1,66 @@
+{
+  "name": "nitro-imessage-agent",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "description": "Durable iMessage AI agent template — Nitro v3 + Chat SDK + Vercel AI SDK + Vercel Workflow + evlog observability, talking iMessage via Sendblue.",
+  "keywords": [
+    "imessage",
+    "ai-agent",
+    "nitro",
+    "vercel-workflow",
+    "chat-sdk",
+    "vercel-ai-sdk",
+    "ai-gateway",
+    "sendblue",
+    "evlog",
+    "durable-execution",
+    "ai-chatbot",
+    "typescript"
+  ],
+  "homepage": "https://github.com/HugoRCD/nitro-imessage-agent#readme",
+  "author": "HugoRCD",
+  "funding": "https://github.com/sponsors/HugoRCD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HugoRCD/nitro-imessage-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HugoRCD/nitro-imessage-agent/issues"
+  },
+  "imports": {
+    "#*": "./*"
+  },
+  "scripts": {
+    "build": "nitro build",
+    "dev": "nitro dev",
+    "preview": "nitro preview",
+    "prepare": "nitro prepare",
+    "automd": "automd",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "workflow:web": "npx workflow web"
+  },
+  "dependencies": {
+    "@chat-adapter/state-memory": "~4.27.0",
+    "@chat-adapter/state-redis": "^4.27.0",
+    "ai": "^6.0.175",
+    "chat": "^4.27.0",
+    "chat-adapter-sendblue": "^0.2.0",
+    "evlog": "^2.16.0",
+    "workflow": "^4.2.4",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@hrcd/eslint-config": "^3.0.3",
+    "@shelve/cli": "^4.2.0",
+    "automd": "^0.4.3",
+    "eslint": "^9.39.4",
+    "nitro": "latest",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.5"
+  },
+  "packageManager": "pnpm@11.1.3"
+}
